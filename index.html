@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Idade - Lumi</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #ffffff; /* Cor branca para todo o texto */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #age-verification {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: #ffffff; /* Cor branca para o texto dentro deste div */
+            background-color: #F47A20; /* Altere o fundo para laranja para garantir contraste */
+        }
+        h1 {
+            color: #ffffff; /* Cor branca para o título */
+            font-family: Arial, sans-serif; /* Fonte similar */
+        }
+        p {
+            font-size: 18px;
+            color: #ffffff; /* Cor branca para o parágrafo */
+            font-family: Arial, sans-serif; /* Fonte similar */
+        }
+        button {
+            background-color: #F47A20; /* Cor de fundo do botão em laranja */
+            color: #ffffff; /* Cor do texto do botão */
+            border: 2px solid #ffffff; /* Borda branca ao redor do botão */
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: Arial, sans-serif; /* Fonte similar */
+            font-size: 16px;
+            margin: 10px 0; /* Espaçamento vertical entre os botões */
+        }
+        button:hover {
+            background-color: #CC5E16; /* Cor de fundo ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div id="age-verification">
+        <h1>Lumi</h1>
+        <p>Você tem 18 anos ou mais?</p>
+        <button onclick="verifyAge(true)">Sim, tenho 18 anos ou mais</button>
+        <button onclick="verifyAge(false)">Não, sou menor de 18 anos</button>
+    </div>
+
+    <script>
+        function verifyAge(isAdult) {
+            if (isAdult) {
+                window.location.href = "https://www.magazineluiza.com.br/busca/lumi+timbauba/?from=submit";
+            } else {
+                alert("Desculpe, você precisa ter 18 anos ou mais para acessar este conteúdo.");
+            }
+        }
+    </script>
+</body>
+</html>
